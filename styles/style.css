@@ -7,10 +7,10 @@ header{
     justify-content: center;
 }
 .top-banner{
-    width: 1300px;
-    height: 600px;
+    width: 85%;
+    height: 700px;
     border-radius: 30px;
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     background-color: #150C0A;
     justify-content: center;
@@ -18,11 +18,12 @@ header{
 }
 .banner-text{
     margin-left: 7%;
+    
 }
 .banner-text h1{
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     margin: 0;
 
 }
@@ -45,11 +46,14 @@ header{
     font-size: 20px;
 }
 .banner-img{
-    margin-right: 7%;
+    margin-right: ;
     margin-top: 77px;
 }
+.banner-img img{
+    width: 595px;
+}
 
-/************** Container **************/
+/************** Main **************/
 main{
     margin-top: 100px;
     display: flex;
@@ -71,9 +75,10 @@ main{
     text-align: center;
     background-color: white;
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 30px;
+    margin-right: 30px;
     border-radius: 10px;
-    width: 80%;
+    width: 240px;
     height: 20%;
     margin-bottom: 20px;
 }
@@ -163,27 +168,102 @@ main{
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
 }
+
+/************** Media Query for Mobile Device **************/
+@media only screen and (max-width: 688px) {
+    header{
+        width: 100%;
+    }
+    .top-banner{
+        height: 100%;
+        flex-direction: column;
+    }
+    .top-banner .banner-text, .banner-description{
+        text-align: center;
+        margin: 20px 20px;
+    }
+    .banner-text h1{
+        font-size: 40px;
+    }
+    .banner-description{
+        width: 250px;
+        overflow: hidden;
+    }
+    .banner-description p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .banner-img img{
+        width: 300px;
+        margin-top: -70px;
+
+    }
+    main{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .category-box{
+        margin-left: 45px;
+        margin-top: 20px;
+        background-color: white;
+    }
+    .category{
+        border: 1px solid black;
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .foote{
+        height: 500px;
+    }
+    .footer .goal{
+        padding-top: 20px;
+        margin: 0;
+    }
+    .footer .hline{
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer div{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .footer div a{
+        margin-right: 0;
+    }
+}
+
+/************** Media Query for Tablet **************/
+
+
 /************** Footer **************/
-footer{
+.footer{
     background-color: #150C0A;
     height: 400px;
     text-align: center;
     margin-top: 100px;
 }
-footer h2{
+.footer h2{
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: 600;
     color: white;
     padding-top: 100px;
 }
-footer hr{
+.footer hr{
     border: 0.1px solid #808B96;
     width: 1200px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-footer a{
+.footer-links{
+    display: flex;
+    justify-content: center;
+}
+.footer-links a{
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     text-decoration: none;
