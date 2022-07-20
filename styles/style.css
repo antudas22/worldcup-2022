@@ -172,6 +172,22 @@ main{
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
 }
+.viewall-btn{
+    text-align: center;
+    margin-top: 50px;
+}
+.viewall-btn a{
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.viewall-btn{
+    visibility: hidden;
+}
 
 /************** Media Query for Mobile Device **************/
 @media only screen and (max-width: 688px) {
@@ -217,6 +233,9 @@ main{
     .blogs, .matches{
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
+    }
+    .viewall-btn{
+        visibility: hidden;
     }
     .foote{
         height: 500px;
@@ -295,6 +314,9 @@ main{
     .blogs, .matches{
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+    .viewall-btn{
+        visibility: visible;
     }
     .footer .goal{
         padding-top: 80px;
