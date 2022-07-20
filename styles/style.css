@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+}
+/************** Header starts now **************/
+header{
+    display: flex;
+    justify-content: center;
+}
+.top-banner{
+    width: 1300px;
+    height: 600px;
+    border-radius: 30px;
+    margin-top: 40px;
+    display: flex;
+    background-color: #150C0A;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text{
+    margin-left: 7%;
+}
+.banner-text h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    margin: 0;
+
+}
+.banner-text p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 40px;
+}
+.banner-text a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 25px;
+    background-color: red;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.fa-solid{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.banner-img{
+    margin-right: 7%;
+    margin-top: 77px;
+}
+
+/************** Container **************/
+main{
+    margin-top: 100px;
+    display: flex;
+}
+
+/************** Category Box **************/
+.category-box{
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    margin-right: 20px;
+    background-color: #150C0A;
+    border-radius: 20px;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    margin-top: 10%;
+    margin-left: 10%;
+    border-radius: 10px;
+    width: 80%;
+    height: 20%;
+    margin-bottom: 20px;
+}
+.category a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;   
+}
+#last-category{
+    background-color: red;
+}
+
+/************** Blogs **************/
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.blog{
+    width: 310px;
+    height: 350px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.blog img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.blog a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: black;
+    margin-left: 15px;
+    padding: 3px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.blog p, .icon{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.icon{
+    margin-top: 30px;
+}
+.icon .fa-regular{
+    margin-right: 5px;
+}
+.icon .fa-comment-dots{
+    margin-left: 20px;
+}
+
+/************** Matches **************/
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.match{
+    width: 300px;
+    height: 250px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+}
+.match-flag{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+.match-flag h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+.match-info h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+}
+.match-info p{
+    color: #616A6B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+/************** Footer **************/
+footer{
+    background-color: #150C0A;
+    height: 400px;
+    text-align: center;
+    margin-top: 100px;
+}
+footer h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    padding-top: 100px;
+}
+footer hr{
+    border: 0.1px solid #808B96;
+    width: 1200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+footer a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #D7DBDD;
+    margin-right: 30px;
+}
